@@ -1,26 +1,45 @@
-header, footer {
-    background-color: #f8f9fa;
-    padding: 10px;
+/* Footer */
+footer {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 1rem 0;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.copyright {
+    color: #d1d5db;
+    font-size: 0.9rem;
 }
-
-nav ul li a {
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #5865F2;
+    color: white;
     text-decoration: none;
-    color: #007bff;
-    font-family: Arial, sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.discord-button:hover {
+    background-color: #4752C4;
+}
+.discord-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
-main {
-    padding: 20px;
-    margin: 20px;
-    font-family: Arial, sans-serif;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .copyright {
+        margin-bottom: 1rem;
+    }
 }
